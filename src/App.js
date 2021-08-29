@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Service from "./components/Service";
+
 import './App.css';
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Hero />
+      <Service />
+
     </div>
   );
 }
