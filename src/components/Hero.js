@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
 </div>
 <div class="col-lg-12">
 <div class="hero-img wow fadeInUp" data-wow-delay=".5s">
-<img src="assets/img/hero/hero-img.svg" alt="" />
+<img src="assets/img/hero/hero-img.svg" alt="my image" />
 </div>
 </div>
 </div>
