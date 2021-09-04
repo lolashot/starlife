@@ -99,16 +99,16 @@ export default function team() {
 <p>Founder</p>
 <ul class="socials">
 <li>
- {/* <a href="david.html"> <i class="lni lni-facebook-filled"></i> </a> */}
+  <a href="david.html"> <i class="lni lni-facebook-filled"></i> </a> 
 </li>
 <li>
- {/* <a href="david.html"> <i class="lni lni-twitter-filled"></i> </a> */}
+  <a href="david.html"> <i class="lni lni-twitter-filled"></i> </a> 
 </li>
 <li>
- {/* <a href="david.html"> <i class="lni lni-instagram-filled"></i> </a> */}
+  <a href="david.html"> <i class="lni lni-instagram-filled"></i> </a> 
 </li>
 <li>
- {/* <a href="david.html"> <i class="lni lni-linkedin-original"></i> </a> */}
+  <a href="david.html"> <i class="lni lni-linkedin-original"></i> </a> 
 </li>
 </ul>
 </div>
