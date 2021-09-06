@@ -2,7 +2,7 @@
 
 import React from "react";
 
-export default function Navbar() {
+export default function Service() {
   return (
 <section id="features" class="service-section pt-150">
 <div class="container">
@@ -10,7 +10,7 @@ export default function Navbar() {
 <div class="col-xl-6 col-lg-9">
 <div class="service-content">
 <div class="section-title">
-<h1 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Our Cool Features and Services</h1>
+<h1 class="mb-30 wow fadeInUp" data-wow-delay=".2s">Our Recent Projects</h1>
 <p class="mb-40 wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam era.Lorem ipsum dolor sisert amet, consetetur sadipscing sed diam.</p>
 <a href="david.html" class="main-btn btn-hover border-btn wow fadeInUp" data-wow-delay=".6s">Get Started</a>
 </div>

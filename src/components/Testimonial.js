@@ -1,5 +1,8 @@
 import React from "react";
 
+import { testimonials } from "../data";
+
+
 export default function Testimonial() {
   return (
 <section class="testimonial-section img-bg mt-130 pt-60 pb-60">
@@ -13,48 +16,26 @@ export default function Testimonial() {
 </div>
 <div class="testimonial-active-wrapper">
 <div class="row testimonial-active">
-<div class="col-lg-6">
+{testimonials.map((testimonial) => (
+	<div class="col-lg-6">
 <div class="single-testimonial">
 <div class="image">
-<img src="assets/img/testimonial/testimonial-1.png" alt=""/>
+<img src={testimonial.image2} alt="testimonial image"/>
 </div>
 <div class="content">
-<p>Lorem ipsum dolor sit amet, conseta dipscing elitr, sed diam nonumy eirmod temp invidunt ut laboreet dolore magna aliquyamera. Lorem ipsum dolor sitamet.</p>
+<p>{testimonial.quote}
+</p>
 <div class="info">
-<h5>Ena Shah</h5>
-<p>Businessman</p>
+<h5>{testimonial.name}</h5>
+<p>{testimonial.company}</p>
 </div>
 </div>
 </div>
 </div>
-<div class="col-lg-6">
-<div class="single-testimonial">
-<div class="image">
-<img src="assets/img/testimonial/testimonial-2.png" alt=""/>
-</div>
-<div class="content">
-<p>Lorem ipsum dolor sit amet, conseta dipscing elitr, sed diam nonumy eirmod temp invidunt ut laboreet dolore magna aliquyamera. Lorem ipsum dolor sitamet.</p>
-<div class="info">
-<h5>Jonathon Smith</h5>
-<p>Founder Food fanda</p>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="single-testimonial">
-<div class="image">
-<img src="assets/img/testimonial/testimonial-3.png" alt=""/>
-</div>
-<div class="content">
-<p>Lorem ipsum dolor sit amet, conseta dipscing elitr, sed diam nonumy eirmod temp invidunt ut laboreet dolore magna aliquyamera. Lorem ipsum dolor sitamet.</p>
-<div class="info">
-<h5>Dev Ed</h5>
-<p>Teacher at Udemy</p>
-</div>
-</div>
-</div>
-</div>
+	))}
+
+
+
 </div>
 </div>
 </div>
