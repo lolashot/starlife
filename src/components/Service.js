@@ -1,6 +1,7 @@
 
 
 import React from "react";
+import { projects } from "../data";
 
 export default function Service() {
   return (
@@ -16,6 +17,7 @@ export default function Service() {
 </div>
 </div>
 </div>
+{projects.map((project) => (
 <div class="col-lg-12 col-xl-6">
 <div class="row">
 <div class="col-xl-6 col-md-6">
@@ -32,49 +34,15 @@ export default function Service() {
 </svg>
 </div>
 <div class="content">
-<h3>Blazing Fast</h3>
-<p>Lorem ipsum dolor samet consetetur sadipscing dge</p>
+<h3>{project.title}</h3>
+<p>{project.description}</p>
 </div>
 </div>
 </div>
-<div class="col-xl-6 col-md-6">
-<div class="single-service">
-<div class="icon">
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M39 26.4L30.1 35L27.9 32.8C26.8 31.7 25.1 31.7 24 32.8C22.9 33.9 22.9 35.6 24 36.7L27.9 40.6C28.5 41.2 29.3 41.4 30.1 41.4C30.9 41.4 31.8 41.1 32.6 40.6L42.9 30.6C44 29.5 44 27.8 42.9 26.7C41.7 25.6 40.1 25.3 39 26.4Z" fill="#286ADE" />
-<path d="M58.7 23.1C55.9 20 52 17.8 47.9 17C45.7 13.4 42.1 10.6 38.2 9.20001C36.3 8.40001 34.3 8.10001 32.1 8.10001C22.1 8.10001 13.7 15.9 13.2 25.6C5.6 26.7 0 33.1 0 40.6C0 49 7 55.9 15.3 55.9H44.2C55.1 55.9 64 47 64 36.2C64 31.4 62.1 26.7 58.7 23.1ZM44 50.6H15C9.4 50.6 5.3 46.4 5.3 40.9C5.3 35.4 9.8 31.2 15 31.2H18.3V27.3C18.3 19.8 24.4 13.7 31.9 13.7C33.6 13.7 35 14 36.4 14.5C39.5 15.6 42.2 17.8 43.9 20.9L44.7 22.3L46.1 22.6C49.4 22.9 52.8 24.5 55 27.1C57.5 29.9 58.9 33.2 58.9 36.8C58.4 44.2 52 50.6 44 50.6Z" fill="#286ADE" />
-</svg>
-</div>
-<div class="content">
-<h3>SaaS Focused</h3>
-<p>Lorem ipsum dolor samet consetetur sadipscing dge</p>
+
 </div>
 </div>
-</div>
-<div class="col-xl-6 col-md-6">
-<div class="single-service">
-<div class="icon">
-<svg fill="none" height="58" viewBox="0 0 64 58" width="64" xmlns="http://www.w3.org/2000/svg"><path d="m62.1 3.00001c-2.7-2.700002-7-2.700003-9.6-.3l-34.8 32.39999c-1.1 0-2.4.3-3.7.8-2.4 1.1-3.5 2.9-4.5 4.5-1.1 1.9-2.1 3.7-5.6 5.9l-3.9 2.5 3.7 2.1c2.1 1.3 10.2 6.2 17.1 6.2 2.1 0 4-.5 5.6-1.6 2.4-1.9 3.7-4.3 3.5-7v-.3l32.1-35.3c2.8-2.99999 2.5-7.19999.1-9.89999zm-38.8 48.19999c-2.1 1.6-8.3-.3-13.4-2.7 1.9-1.9 2.9-3.7 3.7-5.1.8-1.3 1.3-2.1 1.9-2.4 1.9-.8 3.7 0 4 0 2.4 1.9 5.1 4.8 5.1 7.5.3.5 0 1.6-1.3 2.7zm34.8-42.09999-30 33.19999c-1.3-2.1-3.2-4-4.8-5.4l32.6-30.19999c.5-.5 1.6-.5 2.1 0 .9.6.9 1.6.1 2.4z" fill="#286ade" /></svg>
-</div>
-<div class="content">
-<h3>Clean Design</h3>
-<p>Lorem ipsum dolor samet consetetur sadipscing dge</p>
-</div>
-</div>
-</div>
-<div class="col-xl-6 col-md-6">
-<div class="single-service">
-<div class="icon">
-<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="#286ade"></path></svg>
-</div>
-<div class="content">
-<h3>Bootstrap 5</h3>
-<p>Lorem ipsum dolor samet consetetur sadipscing dge</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+))}
 </div>
 </div>
 </section>

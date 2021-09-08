@@ -1,4 +1,6 @@
 	import React from "react";
+    import { teams } from "../data";
+
 
 	export default function Team() {
 		return (
@@ -14,19 +16,19 @@
 			</div>
 			</div>
 			<div class="row justify-content-center team-wrapper">
-			<div class="col-lg-3 col-md-6 col-sm-10">
+			{teams.map((team) => (
+            <div class="col-lg-3 col-md-6 col-sm-10">
 			<div class="single-team">
 			<div class="image">
-			<img src="assets/img/team/team-1.png" alt=""/>
-			</div>
+			<img src={team.image} alt="teams image"/></div>
 			<div class="content">
-			<h4>Anna Smith</h4>
-			<p>Software Engineer</p>
+			<h4>{team.name}</h4>
+			<p>{team.role}</p>
 			<ul class="socials">
 			<li>
 			<a href="david.html">
 			<i class="fa fa-facebook-official" aria-hidden="true"></i>
- <i class="lni lni-facebook-filled"></i> </a>
+            <i class="lni lni-facebook-filled"></i> </a>
 			</li>
 			<li>
 			<a href="david.html"> <i class="lni lni-twitter-filled"></i> </a>
@@ -41,81 +43,8 @@
 			</div>
 			</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-10">
-			<div class="single-team">
-			<div class="image">
-			<img src="assets/img/team/team-2.png" alt=""/>
-			</div>
-			<div class="content">
-			<h4>John Doe</h4>
-			<p>Lead Designer</p>
-			<ul class="socials">
-			<li>
-			<a href="david.html"> <i class="lni lni-facebook-filled"></i> </a>
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-twitter-filled"></i> </a>
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-instagram-filled"></i> </a>
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-linkedin-original"></i> </a>
-			</li>
-			</ul>
-			</div>
-			</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-10">
-			<div class="single-team">
-			<div class="image">
-			<img src="assets/img/team/team-3.png" alt=""/>
-			</div>
-			<div class="content">
-			<h4>Abraham Smith</h4>
-			<p>Head Of Marketing</p>
-			<ul class="socials">
-			<li>
-			<a href="david.html"> <i class="lni lni-facebook-filled"></i> </a>
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-twitter-filled"></i> </a>
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-instagram-filled"></i> </a>
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-linkedin-original"></i> </a>
-			</li>
-			</ul>
-			</div>
-			</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-10">
-			<div class="single-team">
-			<div class="image">
-			<img src="assets/img/team/team-4.png" alt=""/>
-			</div>
-			<div class="content">
-			<h4>Sara A. K.</h4>
-			<p>Founder</p>
-			<ul class="socials">
-			<li>
-			<a href="david.html"> <i class="lni lni-facebook-filled"></i> </a> 
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-twitter-filled"></i> </a> 
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-instagram-filled"></i> </a> 
-			</li>
-			<li>
-			<a href="david.html"> <i class="lni lni-linkedin-original"></i> </a> 
-			</li>
-			</ul>
-			</div>
-			</div>
-			</div>
+			))}
+			
 			</div>
 			</div>
 			</section>

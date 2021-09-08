@@ -78,28 +78,28 @@ export const teams = [
   {
     image: "https://randomuser.me/api/portraits/men/94.jpg",
     name: "David Shot",
-    company: "ICT Director",
+    role: "ICT Director",
   },
 
   {
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
+    image: "assets/img/testimonial/testimonial-2.png",
     name: "James Charles",
-    company: "Admin Director",
+    role: "Admin Director",
   },
 
   {
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
+    image: "assets/img/testimonial/testimonial-2.png",
     name: "Rakeeta Bindal",
-    company: "Operations",
+    role: "Operations",
   },
 ];
 
 
-export const about = [
+export const abouts = [
   {
     title: "Learn More About Us",
     content: "We are the best and most recognised software development company in the world!",
-    role: [
+    roles: [
     {
       downloads: 2000,
       HappyUsers: 5460,
@@ -112,11 +112,9 @@ export const about = [
 
 
 export const fakeprojects = [
-  {
-    econtact: "efcontact",
-    dutsegranite: "dutsgranite",
-    armyrecruitment: "Nigerian Army Recruitment 2021",
-  },
+  {name: "efcontact",
+  name: "dutsgranite",
+  name: "Nigerian Army Recruitment 2021",},
 ];
 
 
