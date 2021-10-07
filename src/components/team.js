@@ -1,8 +1,18 @@
-	import React from "react";
+	import React,{ useEffect, useState } from "react";
+	import axios from 'axios';
+
     import { teams } from "../data";
 
 
 	export default function Team() {
+		const [APIData, setAPIData] = useState([]);
+    useEffect(() => {
+        axios.get(`https://613a097f1fcce10017e78d33.mockapi.io/teamData`)
+            .then((response) => {
+                console.log('users', response);
+                setAPIData(response.data);
+            })
+    }, [])
 		return (
 
 			<section id="team" class="team-section pt-130">
@@ -16,14 +26,13 @@
 			</div>
 			</div>
 			<div class="row justify-content-center team-wrapper">
-			{teams.map((team) => (
+			{APIData.map((data) => (
             <div class="col-lg-3 col-md-6 col-sm-10">
 			<div class="single-team">
-			<div class="image">
-			<img src={team.image} alt="teams image"/></div>
+		
 			<div class="content">
-			<h4>{team.name}</h4>
-			<p>{team.role}</p>
+			<h4>{data.firstName}</h4>
+			<p>{data.lastName}</p>
 			<ul class="socials">
 			<li>
 			<a href="david.html">

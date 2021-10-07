@@ -1,9 +1,20 @@
-import React from "react";
-
+import React,{ useEffect, useState } from "react";
+import axios from 'axios';
 import { testimonials } from "../data";
 
 
+
+
 export default function Testimonial() {
+	const [APIData, setAPIData] = useState([]);
+    useEffect(() => {
+        axios.get(`https://613a097f1fcce10017e78d33.mockapi.io/testData`)
+            .then((response) => {
+                console.log('users', response);
+                setAPIData(response.data);
+            })
+    }, [])
+
   return (
 <section class="testimonial-section img-bg mt-130 pt-60 pb-60">
 <div class="container">
@@ -16,18 +27,16 @@ export default function Testimonial() {
 </div>
 <div class="testimonial-active-wrapper">
 <div class="row testimonial-active">
-{testimonials.map((testimonial) => (
+ {APIData.map((data) => (
 	<div class="col-lg-6">
 <div class="single-testimonial">
-<div class="image">
-<img src={testimonial.image2} alt="testimonial image"/>
-</div>
+  
 <div class="content">
-<p>{testimonial.quote}
+<p>{data.firstName}
 </p>
 <div class="info">
-<h5>{testimonial.name}</h5>
-<p>{testimonial.company}</p>
+<h5>{data.lastName}</h5>
+<p>{data.checkbox}</p>
 </div>
 </div>
 </div>
